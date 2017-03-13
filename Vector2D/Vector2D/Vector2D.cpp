@@ -3,11 +3,11 @@
 #include <cmath>
 
 using namespace std;
+
 Vector2D::Vector2D() {
     _x = 0;
     _y = 0;
 }
-
 Vector2D::Vector2D(float x, float y) : _x(x), _y(y) {}
 
 Vector2D::~Vector2D() {}
@@ -88,3 +88,4 @@ ostream& operator<<(ostream &os, const Vector2D &obj) {
     os << '[' << obj._x << ','  << obj._y << ']';
     return os;
 }
+

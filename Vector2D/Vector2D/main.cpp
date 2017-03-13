@@ -2,7 +2,7 @@
 #include <vector>
 #include <array>
 
-#include "Vector2D.cpp"
+#include "Vector2D.h"
 
 using namespace std;
 
