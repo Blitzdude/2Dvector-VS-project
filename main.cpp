@@ -2,14 +2,16 @@
 #include <vector>
 #include <array>
 
+#include "Vector2D.cpp"
+
 using namespace std;
 
 int main() {
-    vector<char> myvec = { 'H','e','l','l','o'};
-    cout << "Hello world!" << endl;
-    for_each(myvec.begin(),myvec.end(),[](char c){cout << c << " ";});
-   
-    cout << *ptr << endl;
+   Vector2D vec2D1(20.f, 30.f);
+   Vector2D vec2D2(20.f, 30.f);
+
+   Vector2D vec2D3 = vec2D1 + vec2D2;
+   vec2D3.print();
     
     return 0;
 }
