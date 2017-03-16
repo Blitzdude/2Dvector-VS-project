@@ -14,6 +14,7 @@ class Vector2D {
         ~Vector2D();
         void print();
         float length();
+		float angle();
         Vector2D normalize();
 
         Vector2D operator+ (Vector2D vec);
