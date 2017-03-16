@@ -46,6 +46,20 @@ int main() {
    cout << "Angle of the vector " <<  vecAngle << " Rads" << endl;
    cout << vecAngle * (180 / M_PI) << " Degrees" << endl; // rad to degrees.
 
+   float userX, userY;
+   cout << "give x and y cordinate" << endl;
+   cin >> userX;
+   cin >> userY;
+
+   Vector2D userVec(userX, userY);
+   Vector2D userTemp = userVec.normalize();
+   float userLen = userTemp.length();
+   float userAngle = userTemp.angle();
+   
+
+   cout << "vector length: " << userLen << " vector angle: " << userAngle * (180 / M_PI) << endl;
+   
+
     
     return 0;
 }
